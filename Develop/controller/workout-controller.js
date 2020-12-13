@@ -1,4 +1,3 @@
-//requirements 
 const express = require("express")
 const router = express.Router();
 const Workout = require("../models/exercise.js")
@@ -48,7 +47,7 @@ router.get("/api/workouts", async (req, res) => {
 
 })  
 
-// add a workout
+// create a workout
 router.post("/api/workouts", async (req, res) => {
     
   try {
