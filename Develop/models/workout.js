@@ -1,3 +1,4 @@
+//workout model
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
@@ -37,7 +38,6 @@ const workoutSchema = new Schema({
     }]
 }, {
     toJSON: {
-        // Virtuals are typically used for computed properties on documents.By default, Mongoose does not include virtuals when you convert a document to JSON. For example, if you pass a document to Express' res.json() function, virtuals will not be included by default.To include virtuals in res.json(), you need to set the toJSON schema option to { virtuals: true }.
         virtuals: true
     }
 });
